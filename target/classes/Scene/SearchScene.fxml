@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="content" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SearchController">
+   <children>
+      <Text layoutX="231.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search" textAlignment="CENTER" />
+      <ChoiceBox fx:id="cateCB" layoutX="175.0" layoutY="54.0" prefWidth="150.0" />
+      <TableView fx:id="TV" layoutX="88.0" layoutY="117.0" prefHeight="266.0" prefWidth="324.0">
+        <columns>
+          <TableColumn fx:id="acCol" prefWidth="162.0" text="Account" />
+          <TableColumn fx:id="pwCol" minWidth="0.0" prefWidth="161.0" text="Password" />
+        </columns>
+      </TableView>
+      <Button fx:id="saveBtn" layoutX="432.0" layoutY="206.0" mnemonicParsing="false" onAction="#onBtnClick" prefHeight="27.0" prefWidth="54.0" text="Save" />
+      <Button fx:id="delBtn" layoutX="432.0" layoutY="250.0" mnemonicParsing="false" onAction="#onBtnClick" text="Delete" />
+      <Text fx:id="statusLbl" layoutX="350.0" layoutY="447.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="123.42236328125" />
+      <TextField fx:id="ecTF" layoutX="170.0" layoutY="407.0" promptText="Encrypt Code" />
+      <Button fx:id="backBtn" layoutX="227.0" layoutY="459.0" mnemonicParsing="false" onAction="#onBtnClick" text="Back" />
+   </children>
+</AnchorPane>
