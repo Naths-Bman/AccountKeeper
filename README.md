@@ -1,5 +1,9 @@
 # AccountKeeper
 This Java Application Able User to Save Account With Encrypted Password.
+Java Version: 1.7
+Maven Project Based
+
+Due To Limited Equipment, This Program Only Being Tested In Mac M1 Evironment(Monterey 12.3.1).
 
 [V1]
 Include 3 Basic Functions:
